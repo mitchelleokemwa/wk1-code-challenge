@@ -25,11 +25,11 @@ function speedOfCar(speed){
         return result = "OK"
     }
     else {
-        if(((speed - 70)/5)>12){
+        if((Math.round(speed - 70)/5)>12){
             return result = " Licence suspended"
         }
         else {
-            return result = "Demerit points" + ((speed - 70)/5)
+            return result = "Demerit points" + Math.round((speed - 70)/5)
         }
     }
 }
